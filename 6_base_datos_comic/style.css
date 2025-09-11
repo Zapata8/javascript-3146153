@@ -15,9 +15,9 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(8, 8, 8);
-     padding: 10px 20px;
+     /* padding: 10px 20px; */
      position: fixed;
-     gap: 120vh;
+     /* gap: 120vh; */
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -25,6 +25,7 @@ body{
     
 .inicio{
     position: relative;
+    width: 10vh;
     height: 80vh;
     background-color: darkred;
     display: flex;
@@ -40,12 +41,20 @@ body{
     right: 70px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    
     justify-content: center;
     font-size: 30px;
 }
-.img1{
-    height: 50%;
+.todo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.img{
+  margin: 20vh;
+  height: 50vh;
+  
 }
 
 .nav-links{
@@ -92,13 +101,27 @@ body{
 
 .card {
   background: #6d1010;
+  height: 40vh;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s;
 }
+.card-descripcion{
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin: 20px;
+  
+}
+.card-titulo{
+  color: rgb(0, 0, 0);
+  font-size: 120%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 
 .card img {
-  width: 30%;
+  width: 100%;
   height: 200px;
   object-fit: cover;
 }
@@ -108,11 +131,11 @@ body{
   margin: 15px 0 10px;
 }
 
-.card p {
+/* .card p {
   font-size: 0.9rem;
   color: #ccc;
   padding: 0 10px 20px;
-}
+} */
 
 .card:hover {
   transform: translateY(-10px);
@@ -127,3 +150,4 @@ footer {
   margin-top: 50px;
   border-top: 1px solid #222;
 }
+
