@@ -19,7 +19,7 @@ personajes: ["kael", "kyle", "sandy"]
 },
 {
     id: 2,
-nombreCap: "Suplicas de ayuday",
+nombreCap: "Suplicas de ayuda",
 imgPortada: "./assets/Captura de pantalla 2025-09-04 152747.png",
 video: "video/cap2.mp4",
 descripcion: "El matriomonio de kael y sandy cada vez esa mas roto, aun asi, los tres integrantes de la familia viven un duelo silencioso  ",
