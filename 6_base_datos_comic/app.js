@@ -8,15 +8,16 @@ tituloComic.textContent = comic.nombreComic;
 descripcion.textContent = comic.descripcion;
 
 
-comic.capítulos.forEach(cap => {
+comic.capitulos.forEach(cap => {
     const div = document.createElement("div");
     div.classList.add("card");  
     div.innerHTML = ` 
-    <img src="${cap.imgPortada}"width="150 alt="">
-
+    <a href="./capitulos.html?id=${cap.id}">
+     <img src="${cap.imgPortada}"width="150 alt="">
+     
      <p class="card-titulo">${cap.nombreCap}</p>
-    <p class="card-descripcion">${cap.descripcion}</p>
-        
+     <p class="card-descripcion">${cap.descripcion}</p>
+    </a>
     
 
 `

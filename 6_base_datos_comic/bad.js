@@ -6,7 +6,7 @@ const comic = {
 "descripcion": " La llegada de cristo esta presente y la vida de kael cabia repentinamete, mostrando el punto de vista de los malditos",
 "personajes": ["Kael", "Sandy", "Kyle", "Pastor", "Satanas"],
 "bgBanner": "./assets/Captura de pantalla 2025-09-04 153516.png",
-"capítulos":[
+"capitulos":[
 
 {
 id: 1,
