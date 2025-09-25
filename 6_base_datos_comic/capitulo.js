@@ -11,14 +11,55 @@ const capitulo = comic.capitulos.find(cap => cap.id === id)
 console.log(capitulo);
 
 container.innerHTML = `
-       <div class="container">
-    <div class="card" style="width: 28rem;">
-      <img src="${capitulo.imgPortada}" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">${capitulo.nombreCap}</h5>
-        <p class="card-text">${capitulo.descripcion}</p>
-        <a href="#" class="btn btn-primary">Play</a>
-      </div>
+
+
+<div class="banner" style="background-image: url('${capitulo.imgPortada}')!important;">
+    <div class="flag">${capitulo.id}</div>
+    <h1>${capitulo.nombreCap}</h1>
+    <p>
+      ${capitulo.descripcion}
+    </p>
+    <div class="banner-buttons">
+      <button>▶ Reproducir</button>
+
     </div>
   </div>
+
+  <!-- Sección de tendencias -->
+  <section class="seccion2">
+    <div class="seccion">
+      <h2>Capitulos:</h2>
+
+      <div class="carrusel">
+        <img src="/assets/Captura de pantalla 2025-09-04 152747.png" alt="Suplicas de ayuda">
+        <h3>2.Suplicas de ayuda</h3>
+      </div>
+
+
+
+
+
+
+
+      <div class="carrusel">
+        <img src="./assets/Captura de pantalla 2025-09-04 152818.png" alt="Profecias de fantasia">
+        <h3>3.Profecias de fantasia</h3>
+
+      </div>
+      <div class="carrusel">
+        <img class="hora" src="./assets/Captura de pantalla 2025-09-04 152831.png" alt="No hablar con desconocidos">
+        <h3 class="">4.No hablar con desconocidos</h3>
+      </div>
+      <div class="carrusel">
+        <img src="./assets/Captura de pantalla 2025-09-04 152845.png" alt="La hora del juicio">
+        <h3>5.La hora del juicio</h3>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+
+      
 `
