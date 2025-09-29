@@ -10,10 +10,20 @@ const capitulo = comic.capitulos.find(cap => cap.id === id)
 
 console.log(capitulo);
 
-container.innerHTML = `
+
+container.innerHTML = 
 
 
+// Insertar contenido dinámico en el contenedor principal
+// Se usa  (``) para poder incluir variables de JavaScript dentro del HTML
+`
+<!-- Botón para volver atrás -->
+
+<button class="btn-volver" onclick="window.history.back()">← Atrás</button>
 <div class="banner" style="background-image: url('${capitulo.imgPortada}')!important;">
+
+ <!-- Banner del capítulo -->
+
     <div class="flag">${capitulo.id}</div>
     <h1>${capitulo.nombreCap}</h1>
     <p>
@@ -25,10 +35,15 @@ container.innerHTML = `
     </div>
   </div>
 
-  <!-- Sección de tendencias -->
+  <!-- Sección de capitulos -->
   <section class="seccion2">
     <div class="seccion">
       <h2>Capitulos:</h2>
+
+      <div class="carrusel">
+        <img src="./assets/1.jpg" alt="1.Libranos del mal amén">
+        <h3>1.Libranos del mal amén</h3>
+      </div>
 
       <div class="carrusel">
         <img src="/assets/Captura de pantalla 2025-09-04 152747.png" alt="Suplicas de ayuda">
@@ -43,7 +58,7 @@ container.innerHTML = `
 
       <div class="carrusel">
         <img src="./assets/Captura de pantalla 2025-09-04 152818.png" alt="Profecias de fantasia">
-        <h3>3.Profecias de fantasia</h3>
+        <h3>3.Profecías de fantasía</h3>
 
       </div>
       <div class="carrusel">
@@ -54,7 +69,7 @@ container.innerHTML = `
         <img src="./assets/Captura de pantalla 2025-09-04 152845.png" alt="La hora del juicio">
         <h3>5.La hora del juicio</h3>
       </div>
-
+      
     </div>
     </div>
   </section>

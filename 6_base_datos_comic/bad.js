@@ -1,3 +1,6 @@
+
+
+// Definición del objeto principal "comic" que funciona como base de datos local
 const comic = {
 
 "nombreComic": "Libralos del mal",
@@ -7,19 +10,30 @@ const comic = {
 "descripcion": " La llegada de cristo esta presente y la vida de kael cabia repentinamete, mostrando el punto de vista de los malditos",
 "personajes": ["Kael", "Sandy", "Kyle", "Pastor", "Satanas"],
 "bgBanner": "./assets/Captura de pantalla 2025-09-04 153516.png",
-"capitulos":[
+"capitulos":[ // Nombre o título del capítulo
 
 {
+    
 id: 1,
-nombreCap: "Libranos del mal, amen.",
+// Identificador único del capítulo
+nombreCap: "Libranos del mal, amén.",
+
+// Imagen de portada del capítulo
 imgPortada: "./assets/Captura de pantalla 2025-09-04 152708.png",
+
+// Ruta al video asociado al capítulo
 video: "video/cap1.mp4",
+
+// Descripción breve del capítulo
 descripcion: "kael, su esposa sandy y su hijo kael, suelen ir a la iglesia y evidentemente se hacen ver como una familia religiosa y creyente del cristianismo",
+
+// Personajes que aparecen en este capítulo
 personajes: ["kael", "kyle", "sandy"]
 
 },
 {
     id: 2,
+    
 nombreCap: "Suplicas de ayuda",
 imgPortada: "./assets/Captura de pantalla 2025-09-04 152747.png",
 video: "video/cap2.mp4",
@@ -31,7 +45,7 @@ personajes: ["kael", "sandy", "kyle"]
 {
     id: 3,
 
-nombreCap: "Profecias de fantasia",
+nombreCap: "Profecías de fantasía",
 imgPortada: "./assets/Captura de pantalla 2025-09-04 152818.png",
 video: "video/cap1.mp4",
 descripcion: "Suenan trompetas, gritos y relampagos, sandy y kyle han desaparecido y han dejado su ropa tiratda, kael hara todo por encontrarlos y entender que es lo que esta pasando",
