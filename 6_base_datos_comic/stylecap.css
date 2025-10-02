@@ -51,9 +51,7 @@
     .banner-buttons {
       display: flex;
       gap: 15px;
-    }
-    .banner-buttons button {
-      background-color: rgba(51, 51, 51, 0.8);
+      background-color: darkred;
       color: #fff;
       border: none;
       padding: 10px 20px;
@@ -61,10 +59,9 @@
       border-radius: 5px;
       cursor: pointer;
       transition: 0.3s;
+      width: 20vh;
     }
-    .banner-buttons button:hover {
-      background-color: darkred;
-    }
+    
 
     /* Sección de tendencias */
     .seccion {
@@ -158,11 +155,12 @@
   border-bottom: 10px solid transparent;
 }
 .btn-volver {
-  background: none;
+  background: darkred;
   border: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: 2rem;
   cursor: pointer;
+  
 }
     
     

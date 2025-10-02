@@ -1,7 +1,16 @@
+
+// Crea un objeto que permite leer los parámetros que vienen en la URL
+//Sirve para capturar y usar datos que se pasan por la URL (como id, nombre, filtros, etc.), muy útil cuando navegas entre páginas y quieres mostrar información dinámica.
 const params = new URLSearchParams(window.location.search);
+
+//Agarra el valor del parámetro id y lo convierte en número para saber qué capítulo mostrar.
+//transforma un texto con números en un número entero real que JavaScript pueda usar para operar.
 const id = parseInt(params.get("id"))
+
+// Busca en el HTML un espacio (un <div> con clase container) donde más adelante vas a poner el contenido del capítulo.
 const container = document.querySelector(".container");
 
+// Muestra en la consola un mensaje con el id del capítulo en el que estás
 console.log("te encuentras en el capitulo", id);
 
 //buscar capitulo en la base de datos
@@ -10,7 +19,7 @@ const capitulo = comic.capitulos.find(cap => cap.id === id)
 
 console.log(capitulo);
 
-
+// te deja cambiar o reemplazar lo que hay dentro (agregar texto, etiquetas HTML, imágenes, etc.).
 container.innerHTML = 
 
 
@@ -30,7 +39,9 @@ container.innerHTML =
       ${capitulo.descripcion}
     </p>
     <div class="banner-buttons">
-      <button>▶ Reproducir</button>
+      
+       <a class="banner-buttons "href="./video.html?id=${capitulo.id}">Reproducir</a>
+
 
     </div>
   </div>
@@ -76,5 +87,10 @@ container.innerHTML =
 
 
 
+
+
       
 `
+
+
+

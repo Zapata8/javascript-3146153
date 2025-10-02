@@ -22,7 +22,7 @@ nombreCap: "Libranos del mal, amén.",
 imgPortada: "./assets/Captura de pantalla 2025-09-04 152708.png",
 
 // Ruta al video asociado al capítulo
-video: "video/cap1.mp4",
+video: "assets/video.mp4",
 
 // Descripción breve del capítulo
 descripcion: "kael, su esposa sandy y su hijo kael, suelen ir a la iglesia y evidentemente se hacen ver como una familia religiosa y creyente del cristianismo",
@@ -36,7 +36,7 @@ personajes: ["kael", "kyle", "sandy"]
     
 nombreCap: "Suplicas de ayuda",
 imgPortada: "./assets/Captura de pantalla 2025-09-04 152747.png",
-video: "video/cap2.mp4",
+video: "assets/video.mp4",
 descripcion: "El matriomonio de kael y sandy cada vez esa mas roto, aun asi, los tres integrantes de la familia viven un duelo silencioso  ",
 personajes: ["kael", "sandy", "kyle"]
 
@@ -47,7 +47,7 @@ personajes: ["kael", "sandy", "kyle"]
 
 nombreCap: "Profecías de fantasía",
 imgPortada: "./assets/Captura de pantalla 2025-09-04 152818.png",
-video: "video/cap1.mp4",
+video: "assets/video.mp4",
 descripcion: "Suenan trompetas, gritos y relampagos, sandy y kyle han desaparecido y han dejado su ropa tiratda, kael hara todo por encontrarlos y entender que es lo que esta pasando",
 personajes: ["kael", "Pastor",]
 
@@ -57,7 +57,7 @@ personajes: ["kael", "Pastor",]
 
 nombreCap: "No hablar con desconocidos",
 imgPortada: "./assets/Captura de pantalla 2025-09-04 152831.png",
-video: "video/cap1.mp4",
+video: "assets/video.mp4",
 descripcion: "El miedo invade a kael, aun se niega aceptar el paradero de su familia y solo busca un lugar en donde refugiarse",
 personajes: ["kael", "Hombre herido" , "Satanas"]
 
@@ -68,7 +68,7 @@ personajes: ["kael", "Hombre herido" , "Satanas"]
 
 nombreCap: "La hora del juicio",
 imgPortada: "./assets/Captura de pantalla 2025-09-04 152845.png",
-video: "video/cap1.mp4",
+video: "assets/video.mp4",
 descripcion: "El miedo consume a kael, y aunque su destino es dificil de aceptar pierde todo tipo de esperanzas",
 personajes: ["kael", "kyle", "Sandy", "Satanas"]
 

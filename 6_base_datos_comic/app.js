@@ -1,16 +1,19 @@
+// Seleccionamos elementos del DOM por sus clases
 const tituloComic =document.querySelector(".titulo-comic");
 const descripcion = document.querySelector(".descripcion");
 const imgComic = document.querySelector(".img-comic");
 const grid = document.querySelector(".grid");
 
-
+// Asignamos al título y a la descripción los valores que vienen del objeto "comic"
 tituloComic.textContent = comic.nombreComic;
 descripcion.textContent = comic.descripcion;
 
-
+// Recorremos cada capítulo que está dentro de la propiedad "capitulos" del objeto "comic"
 comic.capitulos.forEach(cap => {
     const div = document.createElement("div");
     div.classList.add("card");  
+
+    // Definimos el contenido HTML interno de la tarjeta
     div.innerHTML = ` 
     <a href="./capitulos.html?id=${cap.id}">
      <img src="${cap.imgPortada}"width="150 alt="">
@@ -21,6 +24,8 @@ comic.capitulos.forEach(cap => {
     
 
 `
+// Finalmente, añadimos esta tarjeta al contenedor con clase "grid"
+
 grid.appendChild(div);
 });
 
